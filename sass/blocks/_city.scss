@@ -1,0 +1,103 @@
+.city {
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 156px;
+  margin-bottom: 160px;
+}
+.city__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1090px);
+  width: 735px;
+  height: 138px;
+  z-index: 2;
+  background-image: url("/images/vector-right.svg");
+  background-size: 735px 138px;
+  background-repeat: no-repeat;
+}
+.city__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1062px);
+  width: 445px;
+  height: 445px;
+  z-index: -1;
+  background-image: url("/images/square-blue.png");
+  background-size: 445px;
+  background-repeat: no-repeat;
+}
+.city__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1106px;
+  justify-content: space-between;
+}
+.city__inner-img {
+  width: 100%;
+  max-width: 445px;
+  height: 445px;
+}
+.city__main {
+  width: 100%;
+  max-width: 445px;
+}
+.city__main-heading {
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2.143px;
+}
+.city__main-text {
+  color: #939caa;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.city__main-link {
+  color: #fff;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 167%;
+  display: inline-block;
+  background: #fcb72b;
+  padding: 14px 45px;
+  text-decoration: none;
+  border: 3px solid transparent;
+}
+.city__main-link:hover {
+  border: 3px solid #fcb72b;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fcb72b;
+}
+@media only screen and (max-width: 768px) {
+  .city {
+    overflow-x: hidden;
+  }
+  .city__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .city__inner-img {
+    margin-bottom: 56px;
+  }
+  .city__main-heading {
+    margin-bottom: 40px;
+  }
+  .city__inner::before {
+    left: calc(50% - 730px);
+  }
+}

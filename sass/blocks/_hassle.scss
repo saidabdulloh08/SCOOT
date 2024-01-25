@@ -1,0 +1,104 @@
+.hassle {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 329px;
+}
+.hassle::before {
+  content: "";
+  position: absolute;
+  top: 78px;
+  left: calc(50% + 355px);
+  width: 741px;
+  height: 151px;
+  z-index: 2;
+  background-image: url("/images/vector-left.svg");
+  background-size: 741px 151px;
+  background-repeat: no-repeat;
+}
+.hassle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 617px);
+  width: 445px;
+  height: 445px;
+  z-index: -1;
+  background-image: url("/images/square-blue.png");
+  background-size: 445px;
+  background-repeat: no-repeat;
+}
+.hassle__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1106px;
+  justify-content: space-between;
+}
+.hassle__main {
+  width: 100%;
+  max-width: 445px;
+}
+.hassle__main-heading {
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2.143px;
+}
+.hassle__main-text {
+  color: #939caa;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.hassle__main-link {
+  color: #fff;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 167%;
+  display: inline-block;
+  background: #fcb72b;
+  padding: 14px 45px;
+  text-decoration: none;
+  border: 3px solid transparent;
+}
+.hassle__main-link:hover {
+  border: 3px solid #fcb72b;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fcb72b;
+}
+.hassle__inner-img {
+  width: 100%;
+  max-width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .hassle {
+    overflow-x: hidden;
+  }
+  .hassle::before {
+    left: calc(50% + 20px);
+    top: 100px;
+  }
+  .hassle__inner-img {
+    margin-bottom: 56px;
+  }
+  .hassle__inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hassle__main-heading {
+    margin-bottom: 40px;
+  }
+}
