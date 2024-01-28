@@ -1,0 +1,126 @@
+.value {
+  margin-bottom: 120px;
+}
+.value__inner-heading {
+  color: #495567;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2.143px;
+}
+.value__inner-list {
+  list-style-type: none;
+  display: flex;
+  width: 1110px;
+  justify-content: space-between;
+}
+.value__inner-item {
+  width: 350px;
+  text-align: center;
+}
+.value__picture-box {
+  position: relative;
+  width: 350px;
+}
+.value__picture-box-img {
+  width: 240px;
+  height: 240px;
+  margin-bottom: 87px;
+  margin-top: 103px;
+}
+.value__picture-box-span1 {
+  left: calc(50% - 50px);
+}
+.value__picture-box-span2 {
+  left: calc(50% - 50px);
+}
+.value__picture-box-span3 {
+  left: calc(50% - 50px);
+}
+.value__picture-box-span {
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+  z-index: 3;
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117%;
+  letter-spacing: -1.071px;
+  padding: 34px;
+  border-radius: 50%;
+  background-color: #fcb72b;
+}
+.value__title-box {
+  width: 350px;
+}
+.value__title-box-heading {
+  color: #495567;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117%;
+  letter-spacing: -1.071px;
+}
+.value__title-box-text {
+  color: #939caa;
+  text-align: center;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
+  margin-top: 27px;
+}
+
+@media only screen and (max-width: 768px) {
+  .value {
+    overflow-x: hidden;
+  }
+  .value__inner {
+    width: 100%;
+  }
+  .value__inner-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .value__inner-item {
+    width: 100%;
+    max-width: 457px;
+  }
+  .value__picture-box {
+    margin: 0 auto;
+  }
+  .value__title-box {
+    width: 100%;
+    max-width: 457px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .value__inner-heading {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+  }
+  .value__inner-item {
+    width: 100%;
+    max-width: 311px;
+  }
+  .value__picture-box {
+    margin: 0 auto;
+    width: 311px;
+  }
+  .value__title-box {
+    width: 100%;
+    max-width: 457px;
+  }
+}

@@ -1,0 +1,131 @@
+.faqs {
+  margin-bottom: 160px;
+}
+.faqs__main-heading {
+  color: #495567;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2.143px;
+  margin-bottom: 64px;
+}
+.faqs__main-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  list-style-type: none;
+}
+.faqs__main-item {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.faqs__main-item-box {
+  max-width: 1110px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.faqs__main-item-box-heading {
+  width: 273px;
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -1.786px;
+}
+.faqs__main-item-box-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 730px;
+  width: 100%;
+  gap: 16px;
+}
+.faqs__main-item-box-item {
+  padding: 32px 40px;
+  width: 100%;
+  background-color: #f2f5f9;
+}
+.faqs__main-item-box-item-title-box {
+  max-width: 650px;
+  width: 100%;
+}
+.faqs__main-item-box-item-heading {
+  position: relative;
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117%;
+  letter-spacing: -1.071px;
+}
+.faqs__main-item-box-item-heading-mb24 {
+  margin-bottom: 24px;
+}
+.faqs__main-item-box-item-heading-mb24::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: calc(50% + 315px);
+  width: 18px;
+  height: 13px;
+  background-image: url("/images/scrool-up.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 13px;
+}
+.faqs__main-item-box-item-heading-down::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: calc(50% + 315px);
+  width: 18px;
+  height: 13px;
+  background-image: url("/images/scrool-down.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 13px;
+}
+.faqs__main-item-box-item-text {
+  color: #495567;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
+}
+
+@media only screen and (max-width: 768px) {
+  .faqs {
+    overflow-x: hidden;
+  }
+  .faqs__main-item-box {
+    flex-direction: column;
+  }
+  .faqs__main-item-box-heading {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .faqs {
+    overflow-x: hidden;
+  }
+  .faqs__main-list {
+    width: 311px;
+    margin: 0 auto; 
+  }
+  .faqs__main-item-box {
+    flex-direction: column;
+  }
+  .faqs__main-item-box-heading {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}

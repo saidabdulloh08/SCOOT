@@ -55,3 +55,8 @@
 .site-footer__bottom-inner-nav-item-link:hover {
   color: #e5ecf4;
 }
+@media only screen and (max-width: 768px) {
+  .site-footer__bottom {
+       overflow-x: hidden;
+  }
+}
